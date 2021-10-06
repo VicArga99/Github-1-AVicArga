@@ -1,0 +1,131 @@
+@import "./colores";
+@import "./mediaQueries";
+@import "./extra";
+
+/* footer */
+
+footer { 
+    padding: 30px 0; 
+    margin-top: 60px;   
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;   
+    background-color: $violeta;
+    border-radius: 20px;
+    display: flex;  
+    justify-content: center; 
+     @include movil{
+        display: flex;  
+        justify-content: flex-start;
+    }
+}
+
+footer p{
+    margin-bottom: 13px;
+}
+
+.seguir{
+    flex-basis: 40%; 
+    padding-left: 40px;  
+   
+}
+.seguir h2,p{
+    flex-basis: 100%;
+}
+
+.seguir h2{
+    color:$bl ;
+    font-family: 'Press Start 2P';
+    font-size: 22px;
+}
+
+.seguir p{
+    color: $wt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contacto{
+    flex-basis: 80%;
+}
+.contacto form{
+   display: grid;
+   grid-template-rows: 30px 30px 30px;
+   grid-template-columns: auto auto;
+   align-content: center;   
+   grid-gap:20px
+} 
+
+.contacto h2{
+    color: $bl;
+    font-family: 'Press Start 2P';
+    font-size: 22px;
+    margin: 4px;
+ } 
+.contacto .nombre {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.contacto .emailContacto{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.contacto textarea{
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+.contacto button {  
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: start;
+}
+.boton{
+    padding: 6px;
+    border-color:$mainColor;
+    background-color: $mainColor;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.boton:hover{
+    border-color: $wt;  
+    color: $wt;  
+    background-color: $turquesa;
+}
+
+input,textarea{
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: $lighTurquesa;
+
+}
+
+.social-media {
+    list-style: none; 
+    padding: 2px; 
+    margin: 16px; 
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  
+  .social-media li {
+    background: $turquesa; 
+    color: $wt; 
+    height: 50px; 
+    width: 50px; 
+    text-align: center; 
+    border-radius: 50%; 
+    line-height: 50px;
+    margin: 0px 10px; 
+  }
+
+  .social-media li:hover {
+    background: $mainColor; 
+}
+
+

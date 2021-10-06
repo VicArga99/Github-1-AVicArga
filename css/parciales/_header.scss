@@ -1,0 +1,55 @@
+@import "./colores";
+@import "./extra";
+@import "./mediaQueries";
+
+/*header*/
+
+.barra {
+    background-color: $lightPink;
+    text-align: center; 
+    padding: 2px;  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    @include movil{
+        color: $violeta; 
+        opacity: 1;
+        position: absolute;
+    }
+    &__Img  {
+    height: 70px;
+    width: 90px;
+    margin: 3px;
+    padding: 5px;
+}
+&__Texto  {
+    margin: auto;
+    overflow: hidden;
+    grid-column: 2/7;
+    display: flex;
+     @include movil{
+        grid-column: 2/4;
+        display: flex;
+        position: relative;
+    }
+}
+&__Texto > li {
+    display: flex;
+   justify-content: center;
+   margin: 4px 50px;
+   font-size:  22px; 
+   @include movil{
+    display: flex;
+    justify-content: space-between;
+    }
+}
+&__Texto > li > a {
+    display: flex;
+   padding: 8px;
+   color: $bl;
+   text-decoration: none;
+   font-family: 'Gugi';
+}
+&__Texto > li > a:hover {
+    color: $turquesa
+}
+}
