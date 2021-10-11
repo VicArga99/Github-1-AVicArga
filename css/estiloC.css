@@ -456,6 +456,8 @@ flex-basis: 40%;
 }
 .porfolioFoto img{
     width: 100%;
+    animation-name: aparece;
+    animation-duration: 6s; 
 }
 
 /* servicios */
